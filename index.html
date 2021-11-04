@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Spotify</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+<!-- Font-Awesome Script -->
+<script src="https://kit.fontawesome.com/8e7cdbc65b.js" crossorigin="anonymous"></script>
+
+<!-- Favicon -->
+<link rel="icon" href="images/spotify.png">
+
+<!-- Bootstrap Styling -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- Custom Styling -->
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+
+  <body>
+    <!-- Fixed-Navbar on Left  -->
+    <div class="wrapper d-flex">
+        <div class="sidebar">
+            <ul class="fa_list">
+
+
+              <li class="fa_list_item"><a href="#" class="fa_links"><i class="fas fa-ellipsis-h"></i></a></li>
+                <li class="fa_list_item"><a href="#" class="fa_links"><i class="fas fa-home "></i>Dashboard</a></li>
+                <li class="fa_list_item"><a href="#" class="fa_links"><i class="fas fa-search "></i>Search</a></li>
+                <li class="fa_list_item"><a href="#" class="fa_links"><i class="fas fa-grip-lines-vertical"></i>Your Library</a></li>
+
+                <div class="dropdown-divider"></div>
+
+                <li class="fa_list_item"><a href="#" class="fa_links"><i class="far fa-plus-square "></i>Create Playlist</a></li>
+                <li class="fa_list_item"><a href="#" class="fa_links"><i class="far fa-heart"></i>Liked Songs</a></li>
+
+                <div class="dropdown-divider"></div>
+                <li class="fa_list_item"><a href="#" class="fa_links"><i class="fas fa-music "></i>Playlist X</a></li>
+                <li class="fa_list_item"><a href="#" class="fa_links"><i class="fas fa-music "></i>Playlist Y</a></li>
+            </ul>
+        </div>
+      </div>
+
+    <!-- Sidebar Right -->
+
+    <div class="wrap">
+      <div class="sidebar-wrapper">
+
+      <h4>Friends Activity</h4>
+      <p>Connect with Facebook to see what your friends are playing.</p>
+      <button class="btn btn-primary" type="button" name="button"><i class="fab fa-facebook-f"></i>  Connect with Facebook</button>
+      <br>
+      <br>
+      <p class="mini_text">We'll never post anything without your permission. Sow & hide friends activity from settings</p>
+      </div>
+    </div>
+
+    <!-- Fixed Bar at the Bottom -->
+
+    <div class="wrap-bottom">
+     <div class="bottombar-wrapper">
+
+    <div class="inc">
+       <span >
+         <img class="inc" src="images/song.jpg" alt="Playing Song" height="70px" width="70px">
+       </span>
+
+       <div class="inc mar_top">
+         <h6 class="btm_marg">Are you Lonely</h6>
+         <p class="inc song_name">Steeve Aoki,Alan Walker</p>
+      </div>
+    </div>
+
+    <i class="fas fa-heart fa_heart" ></i>
+
+      <div class=" song_bars">
+     <div class="spc_lft song_bars">
+        <i class="fas fa-random inc play_btns" style="color:#01d95f"></i>
+        <i class="fas  fa-step-backward inc play_btns"></i>
+        <i class="fas fa-2x fa-pause-circle inc play_btns"></i>
+        <i class="fas  fa-step-forward inc play_btns"></i>
+        <i class="fas  fa-redo inc play_btns"></i>
+      </div>
+        <div class=" progress ms_spc">
+        <div class="progress-bar w-50 inc" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+
+      <div class="inc">
+        <div class="space_left play_btns ">
+          <i class="fas fa-microphone play_btns "></i>
+          <i class="fas fa-list play_btns " ></i>
+          <i class="fas fa-mobile-alt play_btns "></i>
+          <i class="fas fa-volume-up play_btns " style="color:#01d95f"></i>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- Fixed Navbar on  Top -->
+
+    <div class="wrap_top">
+      <div class="top_wrapper">
+        <button type="button" class="btn btn-sm btn-dark top_marg_left circular_btn " disabled>
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button type="button" class="btn btn-sm btn-dark circular_btn among_imgs" disabled>
+          <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <button type="button" class="btn btn-dark btn-lg upgrade_btn">Upgrade</button>
+
+          <!-- Default dropleft button -->
+      <div class="btn-group dropleft d-left">
+        <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-user-alt"></i>
+            Jay
+      </button>
+          <div class="dropdown-menu bg-secondary">
+              <a class="dropdown-item" href="#">Account</a>
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">Upgrade to Premium</a>
+              <a class="dropdown-item" href="#">Private Session</a>
+              <a class="dropdown-item" href="#">Settings</a>
+
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Log-Out</a>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- Songs Section -->
+<section id="songs_section">
+
+  <div class="songs_section">
+
+    <h3><span id="time"></span></h3>
+
+
+   <div class="card bg-dark text-white spc_btm">
+     <img class="card-img poster" src="images/sorry.jpg" alt="Card image" >
+     <div class="card-img-overlay">
+       <h4 class="card-title">Sorry</h4>
+       <p class="card-text">Alan Walker, ISAK</p>
+     </div>
+   </div>
+
+
+<!-- Card Deck -->
+
+<div class="row">
+
+  <div class="col-sm-6 col-md-4" >
+    <div class="card bg-dark" >
+      <div class="card-body div_pd_rm">
+            <img class="card-img-top song_img img_display" src="images/images.jpg" alt="Card image cap">
+            <h5  class="card-title img_display">Spectre</h5>
+              <i class="fas fa-play btn_spc fa-2x"></i>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="card bg-dark ">
+      <div class="card-body div_pd_rm">
+            <img class="card-img-top song_img inc img_display" src="images/different_world.jpg" alt="Card image cap">
+        <h5 class="card-title inc img_display">Sorry</h5>
+              <i class="fas fa-play btn_spc fa-2x"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="card bg-dark ">
+      <div class="card-body div_pd_rm">
+        <img class="card-img-top song_img inc img_display" src="images/different_world.jpg" alt="Card image cap">
+        <h5 class="card-title inc img_display">Lily</h5>
+              <i class="fas fa-play btn_spc fa-2x"></i>
+        </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4 pd_tp">
+    <div class="card bg-dark">
+      <div class="card-body div_pd_rm">
+        <img class="card-img-top song_img inc img_display" src="images/different_world.jpg" alt="Card image cap">
+        <h5 class="card-title img_display">Stereo</h5>
+              <i class="fas fa-play btn_spc fa-2x"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4 pd_tp ">
+    <div class="card bg-dark">
+      <div class="card-body div_pd_rm">
+        <img class="card-img-top song_img img_display " src="images/images.jpg" alt="Card image cap">
+        <h5 class="card-title img_display">Lonely</h5>
+              <i class="fas fa-play btn_spc fa-2x"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4 pd_tp ">
+    <div class="card bg-dark">
+      <div class="card-body div_pd_rm">
+        <img class="card-img-top song_img img_display" src="images/poster.jpg" alt="Card image cap">
+        <h5 class="card-title img_display">Alone</h5>
+              <i class="fas fa-play btn_spc fa-2x"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-12">
+  <h3 class="jump">Jump Back In</h3>
+  </div>
+
+<div class="col-md-4 ">
+ <div class="card bg-dark" style="width: 14rem;">
+  <img class="card-img-top card__img" src="images/like.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Liked Songs</h5>
+    <p class="card-text">Genre.</p>
+  </div>
+ </div>
+</div>
+
+<div class=" col-md-4">
+ <div class="card bg-dark" style="width: 14rem;">
+  <img class="card-img-top card__img" src="images/repeat.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">On Repeat</h5>
+    <p class="card-text">Your current favourites.</p>
+  </div>
+ </div>
+</div>
+
+<div class=" col-md-4">
+ <div class="card bg-dark" style="width: 14rem;">
+  <img class="card-img-top card__img" src="images/rewind.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Repeat Rewind</h5>
+    <p class="card-text">Your past favourites.</p>
+  </div>
+ </div>
+</div>
+
+<div class="col-lg-12">
+<h3 class="jump">Uniquely Yours</h3>
+</div>
+
+<div class="col-md-4 ">
+ <div class="card bg-dark" style="width: 14rem;">
+  <img class="card-img-top card__img" src="images/music.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Song Name</h5>
+    <p class="card-text">Credits.</p>
+  </div>
+ </div>
+</div>
+
+<div class=" col-md-4">
+ <div class="card bg-dark" style="width: 14rem;">
+  <img class="card-img-top card__img" src="images/music.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Song Name</h5>
+    <p class="card-text">Credits.</p>
+  </div>
+ </div>
+</div>
+
+<div class=" col-md-4">
+ <div class="card bg-dark" style="width: 14rem;">
+  <img class="card-img-top card__img" src="images/music.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Song Name</h5>
+    <p class="card-text">Credits.</p>
+  </div>
+ </div>
+</div>
+
+<div class="col-lg-12">
+<h3 class="jump">For Your Mood</h3>
+</div>
+
+<div class="col-md-4 ">
+ <div class="card bg-dark" style="width: 14rem;">
+  <img class="card-img-top card__img" src="images/love-song.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Song Name</h5>
+    <p class="card-text">Credits.</p>
+  </div>
+ </div>
+</div>
+
+<div class=" col-md-4">
+ <div class="card bg-dark" style="width: 14rem;">
+  <img class="card-img-top card__img" src="images/love-song.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Song Name</h5>
+    <p class="card-text">Credits.</p>
+  </div>
+ </div>
+</div>
+
+<div class=" col-md-4">
+ <div class="card bg-dark" style="width: 14rem;">
+  <img class="card-img-top card__img" src="images/love-song.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Song Name</h5>
+    <p class="card-text">Credits.</p>
+  </div>
+ </div>
+</div>
+
+<div class="col-lg-12">
+<h3 class="jump">Made for You</h3>
+</div>
+
+<div class="col-md-4 ">
+ <div class="card bg-dark" style="width: 14rem;">
+  <img class="card-img-top card__img" src="images/music-track.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Song Name</h5>
+    <p class="card-text">Credits.</p>
+  </div>
+ </div>
+</div>
+
+<div class=" col-md-4">
+ <div class="card bg-dark" style="width: 14rem;">
+  <img class="card-img-top card__img" src="images/music-track.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Song Name</h5>
+    <p class="card-text">Credits.</p>
+  </div>
+ </div>
+</div>
+
+<div class=" col-md-4">
+ <div class="card bg-dark" style="width: 14rem;">
+  <img class="card-img-top card__img" src="images/music-track.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Song Name</h5>
+    <p class="card-text">Credits.</p>
+  </div>
+ </div>
+</div>
+
+<div class="col-lg-12">
+<h3 class="jump">Family Time</h3>
+</div>
+
+<div class="col-md-4 ">
+ <div class="card bg-dark" style="width: 14rem;">
+  <img class="card-img-top card__img" src="images/music-playlist.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Song Name</h5>
+    <p class="card-text">Credits.</p>
+  </div>
+ </div>
+</div>
+
+<div class=" col-md-4">
+ <div class="card bg-dark" style="width: 14rem;">
+  <img class="card-img-top card__img" src="images/music-playlist.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Song Name</h5>
+    <p class="card-text">Credits.</p>
+  </div>
+ </div>
+</div>
+
+<div class=" col-md-4">
+ <div class="card bg-dark" style="width: 14rem;">
+  <img class="card-img-top card__img" src="images/music-playlist.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Song Name</h5>
+    <p class="card-text">Credits.</p>
+  </div>
+ </div>
+</div>
+
+<!-- Footer Section -->
+
+<div class="col-lg-12 footer">
+  <p class="card-text">Created with 💚 by Jay</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+
+
+  <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
